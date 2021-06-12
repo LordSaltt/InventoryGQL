@@ -12,7 +12,7 @@ namespace GraphqlServer.Queries.Suppliers
     public class SupplierMutation
     {
         [UseApplicationDbContext]
-        public async Task<AddSupplierPaylod> AddSupplierAsync(
+        public async Task<AddSupplierPayload> AddSupplierAsync(
             AddSupplierInput input,
             [ScopedService] ApplicationDbContext context,
             [Service] ITopicEventSender eventSender)
@@ -35,7 +35,7 @@ namespace GraphqlServer.Queries.Suppliers
                 record.Id
             );
 
-            return new AddSupplierPaylod(record);
+            return new AddSupplierPayload(record);
 
         }
         

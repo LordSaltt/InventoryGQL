@@ -2,7 +2,6 @@ namespace GraphqlServer.Queries.Suppliers
 {
     public record AddSupplierInput
     (
-        int id,
         string? name,
         string? address,
         string? phone,

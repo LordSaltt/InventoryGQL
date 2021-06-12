@@ -5,13 +5,13 @@ using GraphqlServer.Models;
 
 namespace GraphqlServer.Queries.Suppliers
 {
-    public class AddSupplierPaylod: SupplierPayloadBase
+    public class AddSupplierPayload: SupplierPayloadBase
     {
-        public AddSupplierPaylod(Supplier supplier) : base(supplier)
+        public AddSupplierPayload(Supplier supplier) : base(supplier)
         {            
         }
 
-        public AddSupplierPaylod(IReadOnlyList<UserError> errors)
+        public AddSupplierPayload(IReadOnlyList<UserError> errors)
             : base(errors)
         {
         }

@@ -15,7 +15,6 @@ namespace GraphqlServer.Queries.Suppliers
         {
         }
 
-        public Supplier? Supplier { get; }
-        
+        public Supplier? Supplier { get; }        
     }
 }

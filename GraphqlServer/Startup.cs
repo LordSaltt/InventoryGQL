@@ -7,6 +7,7 @@ using GraphqlServer.Queries.Brands;
 using GraphqlServer.Queries.Categories;
 using GraphqlServer.Queries.Login;
 using GraphqlServer.Queries.Products;
+using GraphqlServer.Queries.Register;
 using GraphqlServer.Queries.Suppliers;
 using GraphqlServer.Shared;
 using GraphqlServer.Types;
@@ -57,6 +58,7 @@ namespace GraphqlServer
                     .AddTypeExtension<CategoryMutation>()
                     .AddTypeExtension<SupplierMutation>()
                     .AddTypeExtension<LoginMutation>()                   
+                    .AddTypeExtension<RegisterUserMutation>()                   
                 .AddSubscriptionType(d => d.Name("Subscription"))
                     .AddTypeExtension<ProductsSubscription>()
                     .AddTypeExtension<SuppliersSubscription>()

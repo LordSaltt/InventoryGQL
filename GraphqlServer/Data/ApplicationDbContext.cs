@@ -15,5 +15,6 @@ namespace GraphqlServer.Data
         public DbSet<Category> Categories { get; set; } = default!; 
         public DbSet<Supplier> Suppliers { get; set; } = default!; 
         public DbSet<SupplierProduct> SupplierProducts { get; set; } = default!; 
+        public DbSet<User> Users { get; set; } = default!; 
     }
 }
